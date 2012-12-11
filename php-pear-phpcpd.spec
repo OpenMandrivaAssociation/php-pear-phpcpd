@@ -2,8 +2,8 @@
 
 Summary:	Copy/Paste Detector (CPD) for PHP code
 Name:		php-pear-%{upstream_name}
-Version:	1.3.3
-Release:	%mkrel 2
+Version:	1.3.5
+Release:	1
 License:	BSD
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
@@ -71,3 +71,17 @@ fi
 %{_datadir}/pear/PHPCPD
 %{_datadir}/pear/packages/phpcpd.xml
 
+
+
+%changelog
+* Fri Dec 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-2mdv2012.0
++ Revision: 742322
+- fix major breakage by careless packager
+
+* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-1
++ Revision: 730877
+- import php-pear-phpcpd
+
+
+* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-1mdv2010.2
+- initial Mandriva package
