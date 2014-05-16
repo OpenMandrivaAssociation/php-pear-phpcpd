@@ -1,6 +1,8 @@
 %define  upstream_name phpcpd
+%define __noautoreq /usr/bin/php
 
 Summary:	Copy/Paste Detector (CPD) for PHP code
+
 Name:		php-pear-%{upstream_name}
 Version:	1.3.5
 Release:	2
@@ -51,22 +53,9 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 
 %files
-%defattr(-,root,root)
 %{_bindir}/phpcpd
 %{_datadir}/pear/PHPCPD
 %{_datadir}/pear/packages/phpcpd.xml
 
 
 
-%changelog
-* Fri Dec 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-2mdv2012.0
-+ Revision: 742322
-- fix major breakage by careless packager
-
-* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-1
-+ Revision: 730877
-- import php-pear-phpcpd
-
-
-* Wed Nov 16 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-1mdv2010.2
-- initial Mandriva package
