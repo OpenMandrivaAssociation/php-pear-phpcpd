@@ -5,7 +5,7 @@ Summary:	Copy/Paste Detector (CPD) for PHP code
 
 Name:		php-pear-%{upstream_name}
 Version:	1.3.5
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/PHP
 URL:		http://www.phpunit.de/
